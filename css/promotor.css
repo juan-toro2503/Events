@@ -17,6 +17,13 @@
     border-radius: 10px;
 
     margin-top:30px ;
+    /* transition: all 1s; */
+}
+.promotor:active{
+    position:absolute;
+    margin:25px auto;
+    z-index: 2;
+    /* transform:scaleY(1.2); */
 }
 .promotor img{
     width:100%;
@@ -26,15 +33,24 @@
 }
 .promotor .promotor-info{
     width:100%;
-    height:auto;
+    height:120px;
     background:rgb(255, 255, 255);
     padding: 18px 10px 5px;
     text-align:center;
+    overflow:hidden;
 
+}
+.promotor:active  .promotor-info{
+    height:auto;
 }
 .promotor-info h3{
     color: rgb(2, 132, 245);;
 
+}
+.promotor-info iframe{
+    width: 60%;
+    height:180px;
+    margin: 10px auto;
 }
 .promotor .promotor-footer{
     width:80%;

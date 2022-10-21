@@ -20,12 +20,28 @@
               </div>
                 <!-- <img class="logo" src="https://logos.flamingtext.com/Word-Logos/eventos-design-fluffy-name.png" alt="" > -->
                 <ul>
-                    <li><a href="./index.html">Proximos eventos</a></li>
-                    <li><a href="./promotores.html">Promotores</a></li>
-                    <li><a href="./servicios.html">Servicios</a></li>
+                  <li><a href="./index.html"><ion-icon name="globe-outline"></ion-icon>Proximos eventos</a></li>
+                  <li><a href="./promotores.html"><ion-icon name="people-outline"></ion-icon>Promotores</a></li>
+                  <li><a href="./servicios.html"><ion-icon name="ribbon-outline"></ion-icon>Servicios</a></li>
                 </ul>
                 <ion-icon name="person-circle-outline" class="logo-login"  data-bs-toggle="modal" data-bs-target="#modal_login"></ion-icon>
-            </nav>
+                <div class="container-menu-sesion">
+                  <ul class="menu-user">
+                    <li><ion-icon name="heart-outline"></ion-icon>Favoritos</li>
+                    <li><ion-icon name="calendar-outline"></ion-icon>Mis Reservas</li>
+                    <li><ion-icon name="swap-horizontal-outline"></ion-icon>Editar Perfil</li>
+                    <li><ion-icon name="exit-outline"></ion-icon>Cerrar Sesión</li>
+                  </ul>
+                 <!--  <ul class="menu-promotor">
+                    <li><ion-icon name="calendar-outline"></ion-icon>Mis Eventos</li>
+                    <li>Mis Reservas</li>
+                    <li><ion-icon name="swap-horizontal-outline"></ion-icon>Editar Perfil</li>
+                    <li><ion-icon name="exit-outline"></ion-icon>Cerrar Sesión</li>
+                  </ul> -->
+                  
+              
+                </div>
+              </nav>
         </header>
         <!-- modal login -->
         <div class="modal fade" id="modal_register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -51,6 +67,8 @@
                   <input type="email">
                   <label for="">Telefono</label>
                   <input type="text">
+                  <label for="">Imagen</label>
+                  <input type="file">
                   <label for="">Contraseña</label>
                   <input type="password">
                   
@@ -64,6 +82,8 @@
                   <input type="text">
                   <label for="">Contraseña</label>
                   <input type="password">
+                  <label for="">Imagen</label>
+                  <input type="file">
                    <label for="">Codigo</label>
                   <input type="Text">
                 </div>
