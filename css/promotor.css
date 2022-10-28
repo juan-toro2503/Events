@@ -10,7 +10,7 @@
     overflow-y: auto;
 }
 .promotor{
-    width:40%;
+    width:45%;
     height:auto;
     background:rgb(255, 255, 255);
     
@@ -22,7 +22,8 @@
 
 .promotor img{
     width:100%;
-    height:250px;
+    height:300px;
+    max-height:400px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -45,9 +46,20 @@
     height:180px;
     margin: 10px auto;
 }
+/* .promotor:active{
+    width: 700px;
+    height: 92vh;
+    
+    margin: 20px auto;
+    position: absolute;
+    z-index: 4;
+    overflow: auto;
+}
 .promotor:active  .promotor-info{
     height:auto;
-}
+
+    
+} */
 .promotor .promotor-footer{
     width:80%;
     height:auto;

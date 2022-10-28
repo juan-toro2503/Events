@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/modal.css">
     <title>Vip Events</title>
 </head>
 <body>
@@ -25,23 +26,86 @@
                 </ul>
                 <ion-icon name="person-circle-outline" class="logo-login"  data-bs-toggle="modal" data-bs-target="#modal_login"></ion-icon>
                 <div class="container-menu-sesion">
-                  <ul class="menu-user">
+                 <!--  <ul class="menu-user">
                     <li><ion-icon name="heart-outline"></ion-icon>Favoritos</li>
                     <li><ion-icon name="calendar-outline"></ion-icon>Mis Reservas</li>
                     <li><ion-icon name="swap-horizontal-outline"></ion-icon>Editar Perfil</li>
                     <li><ion-icon name="exit-outline"></ion-icon>Cerrar Sesión</li>
-                  </ul>
-                 <!--  <ul class="menu-promotor">
+                  </ul> -->
+                  <ul class="menu-promotor">
                     <li><ion-icon name="calendar-outline"></ion-icon>Mis Eventos</li>
-                    <li>Mis Reservas</li>
+                    <li data-bs-toggle="modal" data-bs-target="#modal_event"><ion-icon name="add-circle-outline"></ion-icon>Crear Evento</li>
                     <li><ion-icon name="swap-horizontal-outline"></ion-icon>Editar Perfil</li>
                     <li><ion-icon name="exit-outline"></ion-icon>Cerrar Sesión</li>
-                  </ul> -->
+                  </ul>
                   
               
                 </div>
             </nav>
         </header>
+        <div class="modal fade" id="modal_event" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content modal-content-event">
+              <div class="modal-header">
+                <div class="logo">
+                  <h2 >Vip</h2>
+                  <h3>Events</h3>
+  
+                </div>
+                <h2 class="">Crea Tu Evento</h2>
+                <ion-icon name="close-outline" data-bs-dismiss="modal" aria-label="Close"></ion-icon>
+
+              </div>
+              <div class="modal-body modal-body-event">
+                <div class="img-container">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSplnEwfjBFogbRQ3rRf1QNo06qJNOkJSYbPHP2kBQUzBlqI5I3WhyXtqnFyUAjcvNyvz0&usqp=CAU" alt="">
+                  <input type="file" accept="image/*">
+                </div>
+                <div class="info-container">
+                  <input type="text" placeholder="Nombre Evento">
+                  <input type="Date" placeholder="Fecha:p">
+                  <textarea name="" id="" cols="20" rows="3" placeholder="Descripcion..."></textarea>
+                  <textarea name="" id="" cols="20" rows="3" placeholder="Información"></textarea>       
+                  <input type="text" placeholder="Lugar">
+
+                </div>
+                <div class="types-container">
+                  <div class="quality">
+                    <p>Calidad:</p>
+                    <h5>Vip:</h5><input type="checkbox">
+                    <h5>Platino:</h5><input type="checkbox">
+                    <h5>General:</h5><input type="checkbox">
+
+                  </div>
+                  <div class="quantity">
+                    <p>Cantidad:</p>
+                    <h5>Vip:</h5> <input type="number" min="1">
+                    <h5>Platino:</h5><input type="number" min="1">
+                   <h5>General:</h5>  <input type="number" min="1">
+
+                  </div>
+                  <div class="price">
+                    <p>Precio:</p>
+                    <h5>Vip:</h5> <input type="number">
+                    <h5>Platino:</h5><input type="number">
+                    <h5>General:</h5><input type="number">
+
+                  </div>
+
+                </div>
+                
+                
+           
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Crear Evento</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
         <!-- modal login -->
         <div class="modal fade" id="modal_register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
@@ -149,7 +213,7 @@
                   <p class="description-event">-Ven y luce tu disfraz y podras ganarte grandes premios </p>
                   <p>-Fecha: 31-Octubre-2022</p>
                   <p>-Lugar: Movistar Arena</p>
-                  <button class="btn-event">Adquiere tu boleta</button>
+                  <button class="btn-event" >Adquiere tu boleta</button>
 
                 </div>
                 <div class="container-buy-ticket">
@@ -541,10 +605,11 @@
 
         </footer>
    
-    
+        <script src="../js/animaciones.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>

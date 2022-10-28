@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/servicios.css">
+    <link rel="stylesheet" href="../css/modal.css">
     <title>Servicios</title>
 </head>
 <body>
@@ -34,7 +35,7 @@
                   </ul>
                  <!--  <ul class="menu-promotor">
                     <li><ion-icon name="calendar-outline"></ion-icon>Mis Eventos</li>
-                    <li>Mis Reservas</li>
+                    <li data-bs-toggle="modal" data-bs-target="#modal_event"><ion-icon name="add-circle-outline"></ion-icon>Mis Reservas</li>
                     <li><ion-icon name="swap-horizontal-outline"></ion-icon>Editar Perfil</li>
                     <li><ion-icon name="exit-outline"></ion-icon>Cerrar Sesión</li>
                   </ul> -->
@@ -43,6 +44,67 @@
                 </div>
               </nav>
         </header>
+        <div class="modal fade" id="modal_event" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content modal-content-event">
+              <div class="modal-header">
+                <div class="logo">
+                  <h2 >Vip</h2>
+                  <h3>Events</h3>
+  
+                </div>
+                <h2 class="">Crea Tu Evento</h2>
+                <ion-icon name="close-outline" data-bs-dismiss="modal" aria-label="Close"></ion-icon>
+
+              </div>
+              <div class="modal-body modal-body-event">
+                <div class="img-container">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSplnEwfjBFogbRQ3rRf1QNo06qJNOkJSYbPHP2kBQUzBlqI5I3WhyXtqnFyUAjcvNyvz0&usqp=CAU" alt="">
+                  <input type="file" accept="image/*">
+                </div>
+                <div class="info-container">
+                  <input type="text" placeholder="Nombre Evento">
+                  <input type="Date" placeholder="Fecha:p">
+                  <textarea name="" id="" cols="20" rows="3" placeholder="Descripcion..."></textarea>
+                  <textarea name="" id="" cols="20" rows="3" placeholder="Información"></textarea>       
+                  <input type="text" placeholder="Lugar">
+
+                </div>
+                <div class="types-container">
+                  <div class="quality">
+                    <p>Calidad:</p>
+                    <h5>Vip:</h5><input type="checkbox">
+                    <h5>Platino:</h5><input type="checkbox">
+                    <h5>General:</h5><input type="checkbox">
+
+                  </div>
+                  <div class="quantity">
+                    <p>Cantidad:</p>
+                    <h5>Vip:</h5> <input type="number" min="1">
+                    <h5>Platino:</h5><input type="number" min="1">
+                   <h5>General:</h5>  <input type="number" min="1">
+
+                  </div>
+                  <div class="price">
+                    <p>Precio:</p>
+                    <h5>Vip:</h5> <input type="number">
+                    <h5>Platino:</h5><input type="number">
+                    <h5>General:</h5><input type="number">
+
+                  </div>
+
+                </div>
+                
+                
+           
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Crear Evento</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- modal login -->
         <div class="modal fade" id="modal_register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
