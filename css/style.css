@@ -49,11 +49,14 @@ body{
     border-top:none;
     flex-wrap: wrap;
     transition: all 0.4s;
+    box-shadow: 0px 2px 16px rgb(255, 240, 33);
 }
 .navigator ul{
     display: flex;
+    
     list-style: none;
     justify-content: space-around;
+    
     width: 65%;
 
 }
@@ -181,7 +184,9 @@ body{
     text-align: center;
     font-size:50px;
     color: rgb(255, 255, 255);
-    text-shadow: 0px 1px 10px rgb(118, 131, 243);
+    text-shadow: 0px 1px 10px rgb(27, 49, 243),
+    0px 1px 14px rgb(55, 73, 230),
+    0px 1px 16px rgb(215, 219, 255);
     margin-top: 50px;
     margin-bottom: 20px;
 
@@ -192,15 +197,17 @@ body{
     height:45px;
     display: flex;
     justify-content:space-around;
+    
 
 }
 .container-search input{
-    width:50%;
+    width:60%;
     border-radius: 10px;;
     font-size:28px;
     border:none;
-    outline:1px solid black;
+    outline:none;
     padding-left:8px;
+    
     
 }
 .container-search button{
@@ -266,6 +273,17 @@ body{
   min-height: 300px;
   padding:20px;
   
+}
+.title_event{
+  width: 100%;
+  display: flex;
+
+}
+.title_event .close-event{
+  font-size:35px;
+  margin-left: 40%;
+  cursor: pointer;
+  display:none
 }
 .info-event h2{
   font-size: 30px;
@@ -353,22 +371,22 @@ body{
   background-color:greenyellow;
 }
 
-/* .event:active{
+ #true{
   width:100%;
   max-height: auto;
 
 }
-.event:active .info-event button{
+#true .info-event button{
   display: none;
 }
-.event:active .img-event{
+#true .img-event{
   border-bottom-left-radius: 0px;
 }
-.event:active .container-buy-ticket{
+#true .container-buy-ticket{
   height: auto;
   min-height: 140px;;
   padding:20px;
-} */
+} 
 .container-classes{
   width: 100%;
   height: auto;
@@ -386,6 +404,9 @@ body{
   height:auto;
   text-align: center;
   margin-top:20px;
+}
+.item:hover{
+  transform: scale(1.1);
 }
 .item img{
   border-radius: 10px;

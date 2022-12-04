@@ -13,6 +13,7 @@
     border-left: 2px solid;
     padding-left: 20px;
     margin-top: 30px;
+    cursor: pointer;
 }
 .line{
     border-left: none;
@@ -44,6 +45,10 @@
     padding:10px;
     padding-top:20px;
     border:none;
+    cursor: pointer;
+}
+.plan:hover{
+    transform: scale(1.05)
 }
 .plan ion-icon{
     font-size:45px;

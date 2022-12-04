@@ -26,6 +26,7 @@
     max-height:400px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    transition: all 0.5s;
 }
 .promotor .promotor-info{
     width:100%;
@@ -34,42 +35,69 @@
     padding: 18px 10px 5px;
     text-align:center;
     overflow:hidden;
+    transition: all 0.5s;
 
+}
+.title-promotor{
+    width:100%;
+    display: flex;
+    justify-content:center;
+}
+.title-promotor .close-promotor{
+    position: absolute;
+    margin-left: 28%;
+    display:none;
+    cursor: pointer;
+    font-size:40px;
+    
+}
+.title-promotor .show-promotor{
+    position: absolute;
+    margin-left: 28%;
+    cursor: pointer;
+   
+}
+.promotor-info ion-icon{
+    font-size:35px
 }
 
 .promotor-info h3{
-    color: rgb(2, 132, 245);;
+    color: rgb(2, 132, 245);
 
 }
-.promotor-info iframe{
-    width: 60%;
-    height:180px;
-    margin: 10px auto;
-}
-/* .promotor:active{
-    width: 700px;
-    height: 92vh;
-    
-    margin: 20px auto;
-    position: absolute;
-    z-index: 4;
-    overflow: auto;
-}
-.promotor:active  .promotor-info{
-    height:auto;
+
+
+#promotorTrue  .promotor-info{
+    height:396px;
 
     
-} */
+} 
+#promotorTrue img{
+    height:0px
+}
 .promotor .promotor-footer{
     width:80%;
     height:auto;
     margin: 0px auto;
-    border-top: 1px solid gray;;
+    border-top: 2px solid gray;;
     text-align: center;
     font-size:30px;
 }
-.promotor-footer ion-icon {
+
+.promotor-footer ion-icon:first-child  {
     cursor:pointer;
+    color: rgb(28, 255, 28);
+    
+
+}
+.promotor-footer ion-icon:nth-child(2){
+    cursor:pointer;
+    color: rgb(54, 15, 228);
+
+}
+.promotor-footer ion-icon:nth-child(3){
+    cursor:pointer;
+    color: rgb(100, 219, 255);
 
 }
 .contact{
