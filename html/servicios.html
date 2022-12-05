@@ -19,29 +19,30 @@
                 <h3>Events</h3>
 
               </div>
-                <!-- <img class="logo" src="https://logos.flamingtext.com/Word-Logos/eventos-design-fluffy-name.png" alt="" > -->
+               
                 <ul>
-                  <li><a href="./index.html"><ion-icon name="globe-outline"></ion-icon>Proximos eventos</a></li>
-                  <li><a href="./promotores.html"><ion-icon name="people-outline"></ion-icon>Promotores</a></li>
-                  <li><a href="./servicios.html"><ion-icon name="ribbon-outline"></ion-icon>Servicios</a></li>
+                  <li><a href="./index.html"><ion-icon name="globe-outline"></ion-icon><p> Proximos eventos</p></a></li>
+                  <li><a href="./promotores.html"><ion-icon name="people-outline"></ion-icon><p> Promotores</p></a></li>
+                  <li><a href="./servicios.html"><ion-icon name="ribbon-outline"></ion-icon><p> Servicios</p></a></li>
+              </ul>
+              <img class="img-login" src="https://logos.flamingtext.com/Word-Logos/eventos-design-fluffy-name.png" alt="" >
+              <ion-icon name="person-circle-outline" class="logo-login"  data-bs-toggle="modal" data-bs-target="#modal_login"></ion-icon>
+              <div class="container-menus" id="container_menu_sesion">
+                <ul class="menu-user">
+                  <li><ion-icon name="heart-outline"></ion-icon>Favoritos</li>
+                  <li><ion-icon name="calendar-outline"></ion-icon>Mis Reservas</li>
+                  <li data-bs-toggle="modal" data-bs-target="#modal_register"><ion-icon name="swap-horizontal-outline"></ion-icon>Editar Perfil</li>
+                  <li><ion-icon name="exit-outline"></ion-icon>Cerrar Sesión</li>
+                </ul> 
+                <ul class="menu-promotor" >
+                  <li><ion-icon name="calendar-outline"></ion-icon>Mis Eventos</li>
+                  <li data-bs-toggle="modal" data-bs-target="#modal_event"><ion-icon name="add-circle-outline"></ion-icon>Crear Evento</li>
+                  <li data-bs-toggle="modal" data-bs-target="#modal_register"><ion-icon name="swap-horizontal-outline"></ion-icon>Editar Perfil</li>
+                  <li><ion-icon name="exit-outline"></ion-icon> <p> Cerrar Sesión</p></li>
                 </ul>
-                <ion-icon name="person-circle-outline" class="logo-login"  data-bs-toggle="modal" data-bs-target="#modal_login"></ion-icon>
-                <div class="container-menu-sesion">
-                  <ul class="menu-user">
-                    <li><ion-icon name="heart-outline"></ion-icon>Favoritos</li>
-                    <li><ion-icon name="calendar-outline"></ion-icon>Mis Reservas</li>
-                    <li><ion-icon name="swap-horizontal-outline"></ion-icon>Editar Perfil</li>
-                    <li><ion-icon name="exit-outline"></ion-icon>Cerrar Sesión</li>
-                  </ul>
-                 <!--  <ul class="menu-promotor">
-                    <li><ion-icon name="calendar-outline"></ion-icon>Mis Eventos</li>
-                    <li data-bs-toggle="modal" data-bs-target="#modal_event"><ion-icon name="add-circle-outline"></ion-icon>Mis Reservas</li>
-                    <li><ion-icon name="swap-horizontal-outline"></ion-icon>Editar Perfil</li>
-                    <li><ion-icon name="exit-outline"></ion-icon>Cerrar Sesión</li>
-                  </ul> -->
-                  
-              
-                </div>
+                
+            
+              </div>
               </nav>
         </header>
         <div class="modal fade" id="modal_event" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -300,11 +301,12 @@
 
         </section>
         <footer>
-          <h3 class="info-footer">© 2022 Creado por Juan Toro</h3>
+          <h3 class="info-footer">© 2022-ADSI</h3>
 
         </footer>
-    
-    
+
+
+    <script src="../js/animaciones.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>

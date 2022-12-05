@@ -41,19 +41,24 @@
 .title-promotor{
     width:100%;
     display: flex;
-    justify-content:center;
+    justify-content: space-around;
+    
+}
+.promotor-title{
+    
+    margin-left: 20%;
 }
 .title-promotor .close-promotor{
-    position: absolute;
-    margin-left: 28%;
+    
+    
     display:none;
     cursor: pointer;
     font-size:40px;
     
 }
 .title-promotor .show-promotor{
-    position: absolute;
-    margin-left: 28%;
+    
+    
     cursor: pointer;
    
 }
