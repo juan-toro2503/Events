@@ -23,12 +23,12 @@
     
 }
 .service h3{
-    color:blue;
+    color:rgb(2, 132, 245);
 }
 .container-plans{
     width: 90%;
     height: auto;
-    background-color: rgba(2, 132, 245, 0.541);;
+    background-color: rgba(14, 14, 14, 0.541);;
     display: flex;
 
     padding: 35px;
@@ -54,7 +54,7 @@
     font-size:45px;
 }
 .plan h3{
-    color:blue;
+    color:rgb(2, 132, 245);
 }
 .plan button{
     font-size:18px;

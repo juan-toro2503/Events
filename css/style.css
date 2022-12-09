@@ -18,10 +18,13 @@
 }
 
 body{
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("https://res.cloudinary.com/sagacity/image/upload/c_crop,h_2000,w_3000,x_0,y_0/c_limit,f_auto,fl_lossy,q_80,w_1080/shutterstock_231094354_qzffg4.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #0080FF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%230080FF' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%230f78f0' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%231771e2' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%231b69d3' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%231e62c5' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%231f5bb7' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%232054aa' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23204d9c' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%231f468f' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%231e3f82' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%231c3875' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%231a3269' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23182c5c' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23162550' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23131f45' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23101a39' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%230d142e' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%230A0C24' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+   
     overflow-x: hidden;
     
 }
@@ -38,7 +41,7 @@ body{
 .heade .navigator{
     width:80%;
     height:100%;
-    background-color: rgb(51, 51, 51);
+    background-color:#0A0C24;
     backdrop-filter: blur(80px);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -49,7 +52,7 @@ body{
     border-top:none;
     flex-wrap: wrap;
     transition: all 0.4s;
-    box-shadow: 0px 2px 16px rgb(255, 240, 33);
+    box-shadow: 0px 2px px rgb(33, 255, 225);
 }
 .navigator ul{
     display: flex;
@@ -152,11 +155,11 @@ body{
 }
 
 .navigator .container-menu-sesion ul li:hover{
-  color:blue;
+  color:rgb(2, 132, 245);
   transition: all 0.3s
 }
 .navigator .container-menu-sesion ul li:hover ion-icon{
-  color:blue;
+  color:rgb(2, 132, 245);
   transition: all 0.3s
 
 }
@@ -204,8 +207,8 @@ body{
     text-align: center;
     font-size:50px;
     color: rgb(255, 255, 255);
-    text-shadow: 0px 1px 10px rgb(27, 49, 243),
-    0px 1px 14px rgb(55, 73, 230),
+    text-shadow: 0px 1px 10px rgb(46, 189, 255),
+    0px 1px 14px rgb(55, 160, 230),
     0px 1px 16px rgb(215, 219, 255);
     margin-top: 50px;
     margin-bottom: 20px;
@@ -307,7 +310,7 @@ body{
 }
 .info-event h2{
   font-size: 30px;
-  color:blue;
+  color:rgb(2, 132, 245);
   
 }
 .info-event p{
@@ -441,7 +444,7 @@ body{
 }
 .item h3{
   font-size:22px;
-  color:rgb(0, 26, 255);
+  color:rgb(2, 132, 245);
   margin-top:18px;
 }
 .item p{

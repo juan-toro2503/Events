@@ -4,7 +4,7 @@
     max-height:900px;
     display: flex;
     flex-wrap: wrap;
-    background-color: rgba(2, 132, 245, 0.486);
+    background-color: rgba(14, 14, 14, 0.486);
     padding: 15px;
     justify-content: space-around;
     overflow-y: auto;
